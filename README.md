@@ -6,12 +6,12 @@ The package utilizes Salesforce Action Triggers and Invocable Actions to send of
 
 ### Prerequisites
 The integration requires specific permissions and access to multiple platforms. Below is a comprehensive list of prerequisites:
-A Salesforce administrator needs to install the package.
-The "Manage Public List Views" user permission is necessary for a Salesforce Administrator or a designated marketing administrator to access Marketing App Extensions.
-An Account Engagement license and access to an Account Engagement Business Unit are required.
-An Account Engagement Administrator or Marketing role is needed to create and configure Engagement Studio programs and Account Engagement forms.
-Google Analytics 4 Editor access is required to retrieve the Measurement Id and create an API security key for use in the Measurement Protocol. More details on how to retrieve the Measurement Id and API Secret Key, can be found here.
-Website backend access is required to add a JavaScript snippet for retrieving the GA4 Client Id and appending it to forms. For instructions on how to capture the GA4 Client Id on Account Engagement forms, follow the steps described in this article.
+- A Salesforce administrator needs to install the package.
+- The "Manage Public List Views" user permission is necessary for a Salesforce Administrator or a designated marketing administrator to access Marketing App Extensions.
+- An Account Engagement license and access to an Account Engagement Business Unit are required.
+- An Account Engagement Administrator or Marketing role is needed to create and configure Engagement Studio programs and Account Engagement forms.
+- Google Analytics 4 Editor access is required to retrieve the Measurement Id and create an API security key for use in the Measurement Protocol. More details on how to retrieve the Measurement Id and API Secret Key, can be found here.
+- Website backend access is required to add a JavaScript snippet for retrieving the GA4 Client Id and appending it to forms. For instructions on how to capture the GA4 Client Id on Account Engagement forms, follow the steps described in this article.
 
 ## Setup Process
 There are two ways to install the package in your organization. Before choosing one of these options, please consult with your Salesforce admin.
