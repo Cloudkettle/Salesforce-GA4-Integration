@@ -19,8 +19,8 @@ There are two ways to install the package in your organization. Before choosing 
 ### Setup process using the AppExchange installation link (recommended)
 To install the package, choose one of the links below depending on your organization's type. You can leave the default options selected (install for admins only). If there are any existing components with the same names as the ones in this package, do not install it.
 
-- [Production](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tHu000003kyYj)
-- [Sandbox](https://test.salesforce.com/packaging/installPackage.apexp?p0=04tHu000003kyYj)
+- [Production](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tHu000003l0v1)
+- [Sandbox](https://test.salesforce.com/packaging/installPackage.apexp?p0=04tHu000003l0v1)
 
 ### Setup process using the GitHub project (developer friendly)
 
