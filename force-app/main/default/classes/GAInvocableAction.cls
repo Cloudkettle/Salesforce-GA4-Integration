@@ -17,9 +17,14 @@ public class GAInvocableAction {
 
         for (GoogleAnalyticsRequest req : reqList){            
             String body = '{ "client_id": "' + req.clientId + '",';
+            body += '"timestamp_micros" : "' + req.timestamp + '",';
             body += '"non_personalized_ads": false,';
-            body += '"user_properties": {"'+ req.propName + '": {"value":"' + req.propValue + '"}},';
-            body += ' "events":[{"name":"' + req.eventName + '"}]}';
+            body += ' "events":[{"name":"' + req.eventName + '",';
+            body += '"params": { "session_id":' + '"' + req.sessionId + '"';
+            if (String.isNotEmpty(req.propName)){
+                body += ',"' + req.propName + '":"' + req.propValue + '"';
+            }
+            body += '}}]}';
             requests.add(body);
         }
 
@@ -32,11 +37,17 @@ public class GAInvocableAction {
         
         @InvocableVariable (label='Event name' required = true)
         public String eventName;
+
+        @InvocableVariable (label = 'Session Id' required = true)
+        public String sessionId;
+
+        @InvocableVariable (label = 'Timestamp' required = true)
+        public String timestamp;
         
-        @InvocableVariable (label='Property name' required = true)
+        @InvocableVariable (label='Property name')
         public String propName;
         
-        @InvocableVariable (label='Property value' required = true)
+        @InvocableVariable (label='Property value')
         public String propValue;
     }
 }
